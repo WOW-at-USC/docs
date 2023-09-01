@@ -1,8 +1,8 @@
-title: Just the Docs Template
-description: A starter template for a Jeykll site using the Just the Docs theme!
+title: WOW@USC
+description: This site contains helpful documentation for members of our research lab
 theme: just-the-docs
 
-url: https://just-the-docs.github.io
+url: https://wow-at-usc.github.io/docs
 
 aux_links:
   Template Repository: https://github.com/just-the-docs/just-the-docs-template
