@@ -13,6 +13,8 @@ This page will outline basic WebAssembly usage steps, including setting up the E
 Emscripten is a C/C++-to-WebAssembly compiler that we use frequently in our projects. As such, it's likely that you will need to install and use it. The full installation instructions can be found on the [project's page](https://emscripten.org/docs/getting_started/downloads.html), but the quick commands are:
 
 ```sh
+#Taken from https://emscripten.org/docs/getting_started/downloads.html
+
 git clone https://github.com/emscripten-core/emsdk.git
 
 cd emsdk
