@@ -22,6 +22,13 @@ cd emsdk
 source ./emsdk_env.sh
 ```
 
-## Running the Compiled Module
+## Compiling and Running a WebAssembly Module (from C/C++)
+
+
+
 
 ## Helpful Articles on WebAssembly
+- WebAssembly Core Specification: [https://webassembly.github.io/spec/core/index.html#](https://webassembly.github.io/spec/core/index.html#)
+- High-Level overview from Mozilla: [https://developer.mozilla.org/en-US/docs/WebAssembly/Concepts](https://developer.mozilla.org/en-US/docs/WebAssembly/Concepts)
+- Compilation Guide from Mozilla: [https://developer.mozilla.org/en-US/docs/WebAssembly/C_to_wasm](https://developer.mozilla.org/en-US/docs/WebAssembly/C_to_wasm)
+- WebAssembly Compilation Pipeline in V8 (Chromium Engine): [https://v8.dev/docs/wasm-compilation-pipeline](https://v8.dev/docs/wasm-compilation-pipeline) 
