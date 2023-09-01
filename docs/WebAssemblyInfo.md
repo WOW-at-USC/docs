@@ -16,13 +16,9 @@ Emscripten is a C/C++-to-WebAssembly compiler that we use frequently in our proj
 #Taken from https://emscripten.org/docs/getting_started/downloads.html
 
 git clone https://github.com/emscripten-core/emsdk.git
-
 cd emsdk
-
 ./emsdk install latest
-
 ./emsdk activate latest
-
 source ./emsdk_env.sh
 ```
 
