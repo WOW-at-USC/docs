@@ -60,6 +60,14 @@ This will generate the necessary .wasm, .js, and .html files to run the module i
 
  In the browser, any errors in WebAssembly will be logged to the Inspector Console, which can be accessed on Chrome or Firefox by right-clicking on the page and clicking "Inspect". The Console tab will contain the logged output of the webpage, including any WebAssembly-related logs.
 
+### Compiling a Simplifed Module without Emscripten Dependencies
+To create a WebAssembly module without the Emscripten dependencies, you can use the `-s SIDE_MODULE=1` flag in your compilation command, e.g., 
+```sh
+emcc some_file.c -s SIDE_MODULE=1 -o some_file.wasm
+```
+
+ You can read the full details about this flag and dynamic linking [here](https://emscripten.org/docs/compiling/Dynamic-Linking.html#overview-of-dynamic-linking), but you can just use this flag and expect it to only output your own code.
+Also, you can use these flags `--profiling-funcs -Wl,--demangle`  to help preserve the function names. The [profiling-func](https://emscripten.org/docs/tools_reference/emcc.html#emcc-profiling-funcs) flag will preserve the names of functions when compiled. Due to [name mangling](https://en.wikipedia.org/wiki/Name_mangling#Handling_of_C_symbols_when_linking_from_C.2B.2B), the names may not match up neatly, so the `-Wl,--demangle flag` tries to prevent the compiler from mangling the function names. You can see an example of this flag in [this StackOverflow post](https://stackoverflow.com/questions/64122365/is-there-a-simple-way-to-have-ld-output-demangled-funtion-names).
 
 ## WABT 
 [WABT](https://github.com/WebAssembly/wabt) is a toolset that contains utilities you will most likely need in your projects, particularly the `wasm2wat` and `wat2wasm` conversion tools. To install Wabt on Debian-based Linux distros, you can simply run
